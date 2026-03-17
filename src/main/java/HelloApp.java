@@ -5,15 +5,13 @@ public class HelloApp {
             System.out.println("Hello, World!");
         } else {
             String result = "Hello, ";
-            
-            int count = 0;
+
             for (String name : args) {
-                result += name;
-                count++;
-                if (count < args.length) {
-                    result += ", ";
-                }
+                result += name + ", ";
             }
+
+            // Remove last ", " (2 characters)
+            result = result.substring(0, result.length() - 2);
 
             result += "!";
             System.out.println(result);
