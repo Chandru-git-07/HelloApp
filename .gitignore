@@ -1,4 +1,20 @@
-bin/
-*.exe
+# VS Code
+.vscode/
+
+# Compiled class files
 *.class
+*.jar
 *.log
+
+# Other files
+.DS_Store
+*.iml
+
+# Build folders
+.idea/
+target/
+bin/
+doc/
+out/
+build/
+dist/
