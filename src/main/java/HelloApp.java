@@ -10,12 +10,11 @@ public class HelloApp {
                 result += name + ", ";
             }
 
-            // Remove last ", " (2 characters)
+            // remove last ", "
             result = result.substring(0, result.length() - 2);
 
             result += "!";
             System.out.println(result);
         }
-
     }
 }
