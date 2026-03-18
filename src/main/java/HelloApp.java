@@ -1,19 +1,16 @@
 public class HelloApp {
     public static void main(String[] args) {
 
+        // If no arguments → default output
         if (args.length == 0) {
             System.out.println("Hello, World!");
             return;
         }
 
-        String result = "";
+        // Join all names with ", "
+        String joinedNames = String.join(", ", args);
 
-        for (String name : args) {
-            result += name + ", ";
-        }
-
-        result = result.substring(0, result.length() - 2);
-
-        System.out.println("Hello, " + result);
+        // Print final output
+        System.out.println("Hello, " + joinedNames);
     }
 }
