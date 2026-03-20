@@ -3,11 +3,16 @@ public class HelloApp {
 
         if (args.length == 0) {
             System.out.println("Hello, World!");
-            return;
+        } else {
+            String result = "";
+
+            for (String name : args) {
+                result += name + ", ";
+            }
+
+            result = result.substring(0, result.length() - 2);
+
+            System.out.println("Hello, " + result);
         }
-
-        String joinedNames = String.join(", ", args);
-
-        System.out.println("Hello, " + joinedNames);
     }
 }
